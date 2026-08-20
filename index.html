@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AEROMED // SYSTEM 07</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Libre+Baskerville:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="blueprint-grid"></div>
+    <div class="noise"></div>
+
+    <main class="page">
+
+        <!-- HEADER -->
+
+        <header class="topbar">
+
+            <div class="brand">
+
+                <div class="medical-symbol">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+
+                <div>
+                    <span class="micro-label">
+                        AEROMEDICAL DIVISION
+                    </span>
+
+                    <h1>
+                        AEROMED // 07
+                    </h1>
+                </div>
+
+            </div>
+
+            <div class="header-right">
+
+                <div class="clock" id="clock">
+                    00:00:00
+                </div>
+
+                <div class="status" id="systemStatus">
+                    <span class="status-light"></span>
+                    SYSTEM NOMINAL
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- HERO -->
+
+        <section class="hero">
+
+            <div class="hero-copy">
+
+                <span class="eyebrow">
+                    FLIGHT MEDICAL ARCHIVE — REF. 04/17
+                </span>
+
+                <h2>
+                    THE HUMAN BODY<br>
+                    <span>IN TRANSIT.</span>
+                </h2>
+
+                <p>
+                    Preliminary observations regarding atmospheric
+                    pressure, respiration, circulation, and human
+                    endurance during extended aerial operation.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <button id="recordButton">
+                        <i class="fa-solid fa-file-medical"></i>
+                        VIEW RECORD
+                    </button>
+
+                    <button class="secondary" id="flightButton">
+                        <i class="fa-solid fa-plane"></i>
+                        FLIGHT DATA
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ANALOG INSTRUMENT -->
+
+            <div class="instrument">
+
+                <div class="instrument-header">
+                    <span>ALTITUDE</span>
+                    <span>MED-04</span>
+                </div>
+
+                <div class="gauge">
+
+                    <div class="gauge-number n1">0</div>
+                    <div class="gauge-number n2">2</div>
+                    <div class="gauge-number n3">4</div>
+                    <div class="gauge-number n4">6</div>
+                    <div class="gauge-number n5">8</div>
+
+                    <div class="needle" id="needle"></div>
+
+                    <div class="gauge-center"></div>
+
+                </div>
+
+                <div class="instrument-reading">
+
+                    <strong id="altitude">
+                        08,742
+                    </strong>
+
+                    <span>
+                        FT / ALT
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- DATA STRIP -->
+
+        <section class="data-strip">
+
+            <div>
+                <span>PRESSURE</span>
+                <strong id="pressure">742 MMHG</strong>
+            </div>
+
+            <div>
+                <span>OXYGEN</span>
+                <strong id="oxygen">98.4%</strong>
+            </div>
+
+            <div>
+                <span>PULSE</span>
+                <strong id="pulse">071 BPM</strong>
+            </div>
+
+            <div>
+                <span>VISIBILITY</span>
+                <strong>GOOD</strong>
+            </div>
+
+        </section>
+
+
+        <!-- CONTENT -->
+
+        <section class="content-grid">
+
+            <!-- MEDICAL CARD -->
+
+            <article class="medical-card">
+
+                <div class="card-top">
+
+                    <span>
+                        CASE FILE / 00481
+                    </span>
+
+                    <i class="fa-solid fa-staff-snake"></i>
+
+                </div>
+
+                <h3>
+                    AERIAL PHYSIOLOGY
+                </h3>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Vestibulum ante ipsum primis in faucibus orci
+                    luctus et ultrices posuere cubilia curae.
+                </p>
+
+
+                <div class="diagram">
+
+                    <div class="body-outline">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+
+                    <div class="annotation a1">
+                        RESPIRATORY<br>
+                        SYSTEM
+                    </div>
+
+                    <div class="annotation a2">
+                        CARDIAC<br>
+                        RESPONSE
+                    </div>
+
+                    <div class="annotation a3">
+                        OXYGEN<br>
+                        SATURATION
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            <!-- CRT TERMINAL -->
+
+            <article class="terminal-card">
+
+                <div class="terminal-header">
+
+                    <span>
+                        SYS://AEROMED
+                    </span>
+
+                    <span>
+                        ● REC
+                    </span>
+
+                </div>
+
+                <div class="terminal-screen" id="terminal">
+
+                    <span>
+                        &gt; INITIALIZING MEDICAL ARRAY...
+                    </span>
+
+                    <span>
+                        &gt; CHECKING AIR PRESSURE........ OK
+                    </span>
+
+                    <span>
+                        &gt; CHECKING OXYGEN.............. OK
+                    </span>
+
+                    <span>
+                        &gt; CHECKING VITALS.............. OK
+                    </span>
+
+                    <br>
+
+                    <span class="terminal-highlight">
+                        &gt; ALL SYSTEMS OPERATIONAL
+                    </span>
+
+                    <br>
+
+                    <span>
+                        &gt; AWAITING INPUT_
+                    </span>
+
+                </div>
+
+                <div class="terminal-footer">
+
+                    <span>
+                        MEM: 64KB
+                    </span>
+
+                    <span>
+                        PORT: 03
+                    </span>
+
+                    <span>
+                        LINK: ACTIVE
+                    </span>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- ARCHIVE -->
+
+        <section class="archive">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="micro-label">
+                        ARCHIVAL DATABASE
+                    </span>
+
+                    <h3>
+                        FIELD NOTES
+                    </h3>
+
+                </div>
+
+                <span class="archive-number">
+                    A-0007
+                </span>
+
+            </div>
+
+
+            <div class="notes">
+
+                <div class="note" data-note="ATMOSPHERIC STUDY">
+
+                    <span>
+                        04.17.78
+                    </span>
+
+                    <h4>
+                        ATMOSPHERIC STUDY
+                    </h4>
+
+                    <p>
+                        Lorem ipsum dolor sit amet.
+                        Experimental observations recorded
+                        during ascent.
+                    </p>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+
+                <div class="note" data-note="EMERGENCY PROCEDURE">
+
+                    <span>
+                        09.02.81
+                    </span>
+
+                    <h4>
+                        EMERGENCY PROCEDURE
+                    </h4>
+
+                    <p>
+                        Vestibulum commodo felis quis tortor.
+                        Ut aliquam sollicitudin leo.
+                    </p>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+
+                <div class="note" data-note="CREW OBSERVATION">
+
+                    <span>
+                        11.26.84
+                    </span>
+
+                    <h4>
+                        CREW OBSERVATION
+                    </h4>
+
+                    <p>
+                        Pellentesque habitant morbi tristique
+                        senectus et netus.
+                    </p>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <div>
+                AEROMEDICAL ARCHIVE
+                <span>//</span>
+                CLASSIFIED RESEARCH MATERIAL
+            </div>
+
+            <div id="coordinates">
+                LAT 07° 14' N
+                &nbsp; / &nbsp;
+                LONG 125° 34' E
+            </div>
+
+        </footer>
+
+    </main>
+
+
+    <!-- MODAL -->
+
+    <div class="modal-overlay" id="modal">
+
+        <div class="modal">
+
+            <button class="modal-close" id="modalClose">
+                ×
+            </button>
+
+            <span class="micro-label" id="modalLabel">
+                MEDICAL ARCHIVE
+            </span>
+
+            <h2 id="modalTitle">
+                CASE FILE
+            </h2>
+
+            <div class="modal-line"></div>
+
+            <div class="modal-data">
+
+                <div>
+                    <span>SUBJECT</span>
+                    <strong>AE-00481</strong>
+                </div>
+
+                <div>
+                    <span>STATUS</span>
+                    <strong>STABLE</strong>
+                </div>
+
+                <div>
+                    <span>PRESSURE</span>
+                    <strong>742 MMHG</strong>
+                </div>
+
+                <div>
+                    <span>OXYGEN</span>
+                    <strong>98.4%</strong>
+                </div>
+
+            </div>
+
+            <p id="modalText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing
+                elit. Data retrieved from archived flight records.
+            </p>
+
+            <div class="modal-footer">
+                FILE ACCESS: AUTHORIZED
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+          </html>
